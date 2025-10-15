@@ -2,8 +2,14 @@
   "name": "td3",
   "version": "1.0.0",
   "description": "a",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "dev":"nodemon src/server.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
