@@ -1,6 +1,5 @@
 import express from 'express';
-import questionRouter from './router/questionsRouter.js'
-import userRouter from './router/userRouter.js'
+import todoRouter from './router/todoRouter.js'
 
 const PORT = process.env.PORT || 3000;
 
@@ -8,8 +7,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/questions', questionRouter);
-app.use('/users', userRouter);
+app.use('/todo', todoRouter);
 
 app.listen(PORT, ()=>{
     console.log(`serveur running on http://localhost:${PORT}`);
