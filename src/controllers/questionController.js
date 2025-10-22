@@ -10,9 +10,6 @@ export const getAllQestions = (req, res) =>{
 
 export const createQuestion = (req, res) =>{
     const {question, answer} = req.body
-    if (!question || !answer){
-        return res.status(400).send({error:'error'})
-    }
     res.status(201).send({
         message:'question created successfully'
     })
